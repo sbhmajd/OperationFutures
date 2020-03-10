@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AB69863F2418071C0073B5DD /* OperationFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6986352418071C0073B5DD /* OperationFutures.framework */; };
-		AB6986442418071C0073B5DD /* OperationFuturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6986432418071C0073B5DD /* OperationFuturesTests.swift */; };
 		AB6986462418071C0073B5DD /* OperationFutures.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6986382418071C0073B5DD /* OperationFutures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB698658241807B70073B5DD /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698650241807B70073B5DD /* OperationQueue.swift */; };
 		AB698659241807B70073B5DD /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698651241807B70073B5DD /* Operation.swift */; };
@@ -16,6 +15,11 @@
 		AB69865B241807B70073B5DD /* CoreOperationClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698655241807B70073B5DD /* CoreOperationClosure.swift */; };
 		AB69865C241807B70073B5DD /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698656241807B70073B5DD /* UseCase.swift */; };
 		AB69865D241807B70073B5DD /* CoreOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698657241807B70073B5DD /* CoreOperation.swift */; };
+		AB698666241808340073B5DD /* UnfinishedOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69865F241808340073B5DD /* UnfinishedOperation.swift */; };
+		AB698667241808340073B5DD /* Result.isFailurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698660241808340073B5DD /* Result.isFailurable.swift */; };
+		AB698668241808340073B5DD /* UseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698662241808340073B5DD /* UseCaseTests.swift */; };
+		AB698669241808340073B5DD /* CoreOperationClosureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698664241808340073B5DD /* CoreOperationClosureTests.swift */; };
+		AB69866A241808340073B5DD /* CoreOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698665241808340073B5DD /* CoreOperationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +37,6 @@
 		AB6986382418071C0073B5DD /* OperationFutures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationFutures.h; sourceTree = "<group>"; };
 		AB6986392418071C0073B5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB69863E2418071C0073B5DD /* OperationFuturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OperationFuturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB6986432418071C0073B5DD /* OperationFuturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationFuturesTests.swift; sourceTree = "<group>"; };
 		AB6986452418071C0073B5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB698650241807B70073B5DD /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
 		AB698651241807B70073B5DD /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
@@ -41,6 +44,11 @@
 		AB698655241807B70073B5DD /* CoreOperationClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreOperationClosure.swift; sourceTree = "<group>"; };
 		AB698656241807B70073B5DD /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		AB698657241807B70073B5DD /* CoreOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreOperation.swift; sourceTree = "<group>"; };
+		AB69865F241808340073B5DD /* UnfinishedOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnfinishedOperation.swift; sourceTree = "<group>"; };
+		AB698660241808340073B5DD /* Result.isFailurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.isFailurable.swift; sourceTree = "<group>"; };
+		AB698662241808340073B5DD /* UseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseTests.swift; sourceTree = "<group>"; };
+		AB698664241808340073B5DD /* CoreOperationClosureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreOperationClosureTests.swift; sourceTree = "<group>"; };
+		AB698665241808340073B5DD /* CoreOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreOperationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,8 @@
 		AB6986422418071C0073B5DD /* OperationFuturesTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB6986432418071C0073B5DD /* OperationFuturesTests.swift */,
+				AB69865E241808340073B5DD /* Common */,
+				AB698661241808340073B5DD /* TestCases */,
 				AB6986452418071C0073B5DD /* Info.plist */,
 			);
 			path = OperationFuturesTests;
@@ -126,6 +135,33 @@
 				AB698657241807B70073B5DD /* CoreOperation.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB69865E241808340073B5DD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AB69865F241808340073B5DD /* UnfinishedOperation.swift */,
+				AB698660241808340073B5DD /* Result.isFailurable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AB698661241808340073B5DD /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				AB698662241808340073B5DD /* UseCaseTests.swift */,
+				AB698663241808340073B5DD /* CoreOperation */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		AB698663241808340073B5DD /* CoreOperation */ = {
+			isa = PBXGroup;
+			children = (
+				AB698664241808340073B5DD /* CoreOperationClosureTests.swift */,
+				AB698665241808340073B5DD /* CoreOperationTests.swift */,
+			);
+			path = CoreOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB6986442418071C0073B5DD /* OperationFuturesTests.swift in Sources */,
+				AB698669241808340073B5DD /* CoreOperationClosureTests.swift in Sources */,
+				AB698668241808340073B5DD /* UseCaseTests.swift in Sources */,
+				AB69866A241808340073B5DD /* CoreOperationTests.swift in Sources */,
+				AB698667241808340073B5DD /* Result.isFailurable.swift in Sources */,
+				AB698666241808340073B5DD /* UnfinishedOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
