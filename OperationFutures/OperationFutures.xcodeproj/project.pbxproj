@@ -10,6 +10,12 @@
 		AB69863F2418071C0073B5DD /* OperationFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6986352418071C0073B5DD /* OperationFutures.framework */; };
 		AB6986442418071C0073B5DD /* OperationFuturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6986432418071C0073B5DD /* OperationFuturesTests.swift */; };
 		AB6986462418071C0073B5DD /* OperationFutures.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6986382418071C0073B5DD /* OperationFutures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB698658241807B70073B5DD /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698650241807B70073B5DD /* OperationQueue.swift */; };
+		AB698659241807B70073B5DD /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698651241807B70073B5DD /* Operation.swift */; };
+		AB69865A241807B70073B5DD /* QueueConformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698653241807B70073B5DD /* QueueConformable.swift */; };
+		AB69865B241807B70073B5DD /* CoreOperationClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698655241807B70073B5DD /* CoreOperationClosure.swift */; };
+		AB69865C241807B70073B5DD /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698656241807B70073B5DD /* UseCase.swift */; };
+		AB69865D241807B70073B5DD /* CoreOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB698657241807B70073B5DD /* CoreOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		AB69863E2418071C0073B5DD /* OperationFuturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OperationFuturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6986432418071C0073B5DD /* OperationFuturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationFuturesTests.swift; sourceTree = "<group>"; };
 		AB6986452418071C0073B5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB698650241807B70073B5DD /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		AB698651241807B70073B5DD /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		AB698653241807B70073B5DD /* QueueConformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueConformable.swift; sourceTree = "<group>"; };
+		AB698655241807B70073B5DD /* CoreOperationClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreOperationClosure.swift; sourceTree = "<group>"; };
+		AB698656241807B70073B5DD /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		AB698657241807B70073B5DD /* CoreOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,9 @@
 		AB6986372418071C0073B5DD /* OperationFutures */ = {
 			isa = PBXGroup;
 			children = (
+				AB698654241807B70073B5DD /* Classes */,
+				AB69864F241807B70073B5DD /* Extensions */,
+				AB698652241807B70073B5DD /* Protocols */,
 				AB6986382418071C0073B5DD /* OperationFutures.h */,
 				AB6986392418071C0073B5DD /* Info.plist */,
 			);
@@ -84,6 +99,33 @@
 				AB6986452418071C0073B5DD /* Info.plist */,
 			);
 			path = OperationFuturesTests;
+			sourceTree = "<group>";
+		};
+		AB69864F241807B70073B5DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB698650241807B70073B5DD /* OperationQueue.swift */,
+				AB698651241807B70073B5DD /* Operation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AB698652241807B70073B5DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AB698653241807B70073B5DD /* QueueConformable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AB698654241807B70073B5DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB698655241807B70073B5DD /* CoreOperationClosure.swift */,
+				AB698656241807B70073B5DD /* UseCase.swift */,
+				AB698657241807B70073B5DD /* CoreOperation.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB69865C241807B70073B5DD /* UseCase.swift in Sources */,
+				AB69865B241807B70073B5DD /* CoreOperationClosure.swift in Sources */,
+				AB69865D241807B70073B5DD /* CoreOperation.swift in Sources */,
+				AB69865A241807B70073B5DD /* QueueConformable.swift in Sources */,
+				AB698658241807B70073B5DD /* OperationQueue.swift in Sources */,
+				AB698659241807B70073B5DD /* Operation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +440,7 @@
 		AB69864D2418071C0073B5DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XCMKT3G9Z;
 				INFOPLIST_FILE = OperationFuturesTests/Info.plist;
@@ -410,6 +459,7 @@
 		AB69864E2418071C0073B5DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XCMKT3G9Z;
 				INFOPLIST_FILE = OperationFuturesTests/Info.plist;
